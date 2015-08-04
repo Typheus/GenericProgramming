@@ -37,8 +37,8 @@ namespace StringCalculator
                 regexLookBehind +=operation;
                 regexLookAhead += operation;
             }
-            regexLookBehind +=")]";
-            regexLookAhead +=")]";
+            regexLookBehind +="])";
+            regexLookAhead +="])";
 
             return regexLookBehind + "|" + regexLookAhead;
         }
