@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace StringCalculator
 {
-    class Operations
+    public static class Operations
     {
-        Dictionary<string, Func<double, double, double>> operationDictionary;
-
-        public Operations()
-        {
-            operationDictionary = new Dictionary<string,Func<double,double,double>>
+        public static Dictionary<string, Func<double, double, double>> operationDictionary = new Dictionary<string,Func<double,double,double>>
             {
                 {"+", Add},
                 {"-", Subtract},
@@ -20,25 +16,28 @@ namespace StringCalculator
                 {"/", Divide},
 
             };
-        }
 
-        private double Add(double firstNumber, double secondNumber)
+        public static string[] AvailableOperations()
+        {
+            return operationDictionary.Keys.ToArray();
+        }
+        private static double Add(double firstNumber, double secondNumber)
         {
             return firstNumber + secondNumber;
         }
 
-        private double Subtract(double firstNumber, double secondNumber)
+        private static double Subtract(double firstNumber, double secondNumber)
         {
 
             return firstNumber - secondNumber;
         }
 
-        private double Multiply(double firstNumber, double secondNumber)
+        private static double Multiply(double firstNumber, double secondNumber)
         {
             return firstNumber * secondNumber;
         }
 
-        private double Divide(double firstNumber, double secondNumber)
+        private static double Divide(double firstNumber, double secondNumber)
         {
             return firstNumber / secondNumber;
         }
