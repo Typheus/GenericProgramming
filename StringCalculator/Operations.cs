@@ -30,6 +30,7 @@ namespace StringCalculator
         private double Subtract(double firstNumber, double secondNumber)
         {
             return firstNumber - secondNumber;
+
         }
 
         private double Multiply(double firstNumber, double secondNumber)
