@@ -17,7 +17,8 @@ namespace StringCalculator
                 {"+", Add},
                 {"-", Subtract},
                 {"*", Multiply},
-                {"/", Divide},                
+                {"/", Divide},
+
             };
         }
 
