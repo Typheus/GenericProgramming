@@ -1,6 +1,6 @@
 ﻿namespace StringCalculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
